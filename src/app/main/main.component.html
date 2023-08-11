@@ -1,0 +1,38 @@
+<p>main works!</p>
+<button (click)="Pokemon()">Obtener Pokemon</button>
+<button (click)="TeamBuilder()">Team Builder</button>
+
+<h1 *ngIf="shinyrand == 1">SHINYYYY</h1>
+<div *ngIf="pokemonslots[0] != null">
+  <!-- <div *ngFor="let pokemonslot of pokemonslots" class="pokemon-interface">
+    <div class="pokemon-name">
+      {{ pokemonslot.name }}
+    </div>
+    <div class="pokemon-image" >
+      <img *ngIf="pokemonslot.shiny != 1" [src]="pokemonslot.sprites.front_default" alt="">
+      <img *ngIf="pokemonslot.shiny == 1" [src]="pokemonslot.sprites.front_shiny" alt="">
+    </div>
+    <div class="pokemon-info">
+      <div class="info-row">
+        <div class="info-label">Nivel:</div>
+        <div class="info-value">25</div>
+      </div>
+      <div class="info-row">
+        <div class="info-label">Tipo:</div>
+        <div class="info-value" *ngFor="let type of pokemonslot.types">{{ type.type.name }}</div>
+      </div>
+      <div class="info-row">
+        <div class="info-label">Ataques:</div>
+        <div class="info-value" *ngFor="let movimiento of pokemonslot.movimientos">{{ movimiento.move.name }}</div>
+      </div>
+    </div>
+  </div> -->
+  <div class="image-container">
+    <div class="image-box" *ngFor="let pokemonslot of pokemonslots">
+      <img *ngIf="pokemonslot.shiny != 1" [src]="pokemonslot.sprites.front_default" alt="">
+      <img *ngIf="pokemonslot.shiny == 1" [src]="pokemonslot.sprites.front_shiny" alt="">
+      <p>{{pokemonslot.name}}</p>
+      <button>Ataques</button>
+    </div>
+  </div>
+

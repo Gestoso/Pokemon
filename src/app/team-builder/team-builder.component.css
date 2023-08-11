@@ -1,0 +1,150 @@
+.pokemon-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pokemon-interface {
+
+  bottom: 0;
+  width: 100%;  border: 2px solid #000;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 10px;
+  width: 250px;
+  height: 300px;
+  text-align: center;
+  margin: 20px auto;
+  flex: 1 1 calc(33.33% - 20px);
+  margin: 0.6%;
+}
+
+.pokemon-name {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.pokemon-image img {
+  width: 100px;
+  height: 100px;
+}
+
+.pokemon-info {
+  text-align: left;
+}
+
+.info-row {
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+
+.info-label {
+  flex: 1;
+  font-weight: bold;
+}
+
+.info-value {
+  flex: 1;
+  align-items: center;
+}
+
+.nivel {
+  font-weight: 500;
+}
+
+.tipo {
+  font-weight: 500;
+}
+
+/*COLORES DE LOS TIPOS POKEMON*/
+
+/* Normal */
+.normal {
+  color: #A8A878;
+}
+
+/* Fire */
+.fire {
+  color: #F08030;
+}
+
+/* Water */
+.water {
+  color: #6890F0;
+}
+
+/* Electric */
+.electric {
+  color: #F8D030;
+}
+
+/* Grass */
+.grass {
+  color: #78C850;
+}
+
+/* Ice */
+.ice {
+  color: #98D8D8;
+}
+
+/* Fighting */
+.fighting {
+  color: #C03028;
+}
+
+/* Poison */
+.poison {
+  color: #A040A0;
+}
+
+/* Ground */
+.ground {
+  color: #E0C068;
+}
+
+/* Flying */
+.flying {
+  color: #A890F0;
+}
+
+/* Psychic */
+.psychic {
+  color: #F85888;
+}
+
+/* Bug */
+.bug {
+  color: #A8B820;
+}
+
+/* Rock */
+.rock {
+  color: #B8A038;
+}
+
+/* Ghost */
+.ghost {
+  color: #705898;
+}
+
+/* Dragon */
+.dragon {
+  color: #7038F8;
+}
+
+/* Dark */
+.dark {
+  color: #705848;
+}
+
+/* Steel */
+.steel {
+  color: #B8B8D0;
+}
+
+/* Fairy */
+.fairy {
+  color: #EE99AC;
+}
