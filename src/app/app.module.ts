@@ -7,12 +7,14 @@ import { AppComponent } from './app.component';
 import { MainComponent } from './main/main.component';
 import { TeamBuilderComponent } from './team-builder/team-builder.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { PokedexComponent } from './pokedex/pokedex.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainComponent,
-    TeamBuilderComponent
+    TeamBuilderComponent,
+    PokedexComponent
   ],
   imports: [
     BrowserModule,

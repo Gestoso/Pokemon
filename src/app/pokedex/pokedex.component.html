@@ -1,0 +1,59 @@
+<h1>Pokedex</h1>
+
+<button (click)="kantofunction()">Kanto Pokedex</button>
+<button (click)="johtofunction()">Johto Pokedex</button>
+<button (click)="hoennfunction()">Hoenn Pokedex</button>
+<button (click)="sinnohfunction()">Sinnoh Pokedex</button>
+<button (click)="teseliafunction()">Teselia Pokedex</button>
+<button (click)="kalosfunction()">Kalos Pokedex</button>
+<button (click)="alolafunction()">Alola Pokedex</button>
+<button (click)="galarfunction()">Galar Pokedex</button>
+
+<div *ngIf="show_kanto == true">
+<div *ngFor="let kant of kanto">
+  <p>{{kant.name}}</p>
+  <img  [src]="kant.sprites.front_default" alt="">
+</div>
+</div>
+<div *ngIf="show_johto == true">
+<div *ngFor="let joht of johto">
+  <p>{{joht.name}}</p>
+  <img  [src]="joht.sprites.front_default" alt="">
+</div>
+</div>
+<div *ngIf="show_hoenn == true">
+<div *ngFor="let hoen of hoenn">
+  <p>{{hoen.name}}</p>
+  <img  [src]="hoen.sprites.front_default" alt="">
+</div>
+</div>
+<div *ngIf="show_sinnoh == true">
+<div *ngFor="let sinno of sinnoh">
+  <p>{{sinno.name}}</p>
+  <img  [src]="sinno.sprites.front_default" alt="">
+</div>
+</div>
+<div *ngIf="show_teselia == true">
+<div *ngFor="let teseli of teselia">
+  <p>{{teseli.name}}</p>
+  <img  [src]="teseli.sprites.front_default" alt="">
+</div>
+</div>
+<div *ngIf="show_kalos == true">
+<div *ngFor="let kalo of kalos">
+  <p>{{kalo.name}}</p>
+  <img  [src]="kalo.sprites.front_default" alt="">
+</div>
+</div>
+<div *ngIf="show_alola == true">
+<div *ngFor="let alol of alola">
+  <p>{{alol.name}}</p>
+  <img  [src]="alol.sprites.front_default" alt="">
+</div>
+</div>
+<div *ngIf="show_galar == true">
+<div *ngFor="let gala of galar">
+  <p>{{gala.name}}</p>
+  <img  [src]="gala.sprites.front_default" alt="">
+</div>
+</div>

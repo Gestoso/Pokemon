@@ -26,6 +26,9 @@ export class MainComponent {
   TeamBuilder(){
     this.router.navigate(['/teambuilder']);
   }
+  Pokedex(){
+    this.router.navigate(['/pokedex']);
+  }
 
   Pokemon(){
     this.pokerandom = Math.floor(Math.random() * 600) + 1;
